@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vending Machine FSM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="vendingMachine">
+        <div id="productArea">
+            <div id="productDisplay">
+                <div class="product" id="cokeSlot">Coke</div>
+                <div class="product" id="pepsiSlot">Pepsi</div>
+                <div class="product" id="waterSlot">Water</div>
+            </div>
+            <div id="dropArea">
+                <div id="fallingProduct"></div>
+            </div>
+        </div>
+        <div id="controls">
+            <button onclick="selectItem('Coke')">Select Coke</button>
+            <button onclick="selectItem('Pepsi')">Select Pepsi</button>
+            <button onclick="selectItem('Water')">Select Water</button>
+            <div id="display">
+                <p id="vendingStatus">Select an item</p>
+            </div>
+            <button id="confirmPaymentButton" onclick="confirmPayment()">Confirm Payment</button>
+            <button onclick="restockItems()">Restock Items</button>
+        </div>
+    </div>
+    <script src="vending.js"></script>
+</body>
+</html>
